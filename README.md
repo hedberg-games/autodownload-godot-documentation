@@ -57,12 +57,24 @@ To run/debug the project, set your IDE to launch `editor\Godot.exe` (Windows), `
 
 To open the editor, use the same settings as above and add `-e` as a command argument.
 
-## Custom Godot Builds
+## Selecting Godot Version
 
-With a little configuration, this template can be used to automatically download custom builds of Godot. 
+By default the template uses the latest stable version of Godot, and you can pull changes in order to keep up-to-date.
+
+If you wish to use a specific version of Godot, you can update the `GodotConfiguration.props` file to import that version:
+```xml
+<!-- Use version 4.3 -->
+<Import Project="official/4.3/GodotHashes.props"/>
+```
+
+Presets are provided for all minor versions of Godot (`4.0`, `4.1`, etc.) as well as a `4.x`, which is similar to latest, but won't change major versions (if/when Godot 5 is released.)
+
+### Custom Godot Builds
+
+With a little configuration, this template can be used to automatically download custom builds of Godot.
 
 The `GodotRemote.props` file provides the URLs for the editor download (in zip file format.) 
 
 The `GodotHashes.props` file defines the specific version number that will be downloaded, as well as the `SHA512` hash for each supported OS and architecture. 
 
-Hash checking can be disabled by setting the `GodotCheckHash` property to false (not recommended).
+Samples are provided in the `project/autodownload/custom` folder, which you can update as desired.
