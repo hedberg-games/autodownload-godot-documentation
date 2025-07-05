@@ -53,7 +53,7 @@ It is also possible to launch the Godot Editor directly from these IDEs by selec
 ### Other IDEs
 Follow [Godot's Guidelines](https://docs.godotengine.org/en/stable/tutorials/scripting/c_sharp/c_sharp_basics.html#doc-c-sharp-setup-external-editor) for setting up your IDE (if available.) 
 
-To run/debug the project, set your IDE to launch `editor\Godot.exe` (Windows), `editor/Godot.app` (MacOS), or `editor/Godot` (Linux) with the current working directory set to the `project` folder.
+To run/debug the project, set your IDE to launch `editor\Godot.exe` (Windows), `editor/Godot.app/Contents/MacOS/Godot` (MacOS), or `editor/Godot` (Linux) with the current working directory set to the `project` folder.
 
 To open the editor, use the same settings as above and add `-e` as a command argument.
 
