@@ -15,6 +15,7 @@ Share with collaborators - anyone who builds it will automatically get the corre
 ## Features
 - Automatically downloads the [Godot editor](https://godotengine.org/) during build
 - Includes [launch settings](https://docs.godotengine.org/en/stable/tutorials/scripting/c_sharp/c_sharp_basics.html#doc-c-sharp-setup-external-editor) to run and debug right from the IDE
+- Configuration to pin Godot to a specific version, or use latest (new versions of Godot will be added to the template as they are released)
 
 ## Supported Platforms
 
@@ -43,7 +44,7 @@ Build agents that have access to MSBuild and run one of the supported operating 
 Notably, [Export Templates](https://docs.godotengine.org/en/stable/tutorials/export/exporting_projects.html#export-templates) are not currently downloaded by `Autodownload Godot`.
 
 ## Launch Settings and Supported IDEs
-This template is intended to make it easy to run godot directly from your IDE (Integrated Development Environment).
+This template is intended to make it easy to run Godot directly from your IDE (Integrated Development Environment).
 
 ### VS Code and Visual Studio
 The [recommended](https://docs.godotengine.org/en/stable/tutorials/scripting/c_sharp/c_sharp_basics.html#doc-c-sharp-setup-external-editor) `launch.json` and `tasks.json` (for [VSCode](https://code.visualstudio.com/download)) as well as `launchSettings.json` (for [Visual Studio](https://visualstudio.microsoft.com/)) are included in the project. Simply use the `Run` launch configuration.
@@ -69,7 +70,7 @@ If you wish to use a specific version of Godot, you can update the `GodotConfigu
 
 Presets are provided for all minor versions of Godot (`4.0`, `4.1`, etc.) as well as a `4.x`, which is similar to latest, but won't change major versions (if/when Godot 5 is released.)
 
-### Custom Godot Builds
+## Custom Godot Builds
 
 With a little configuration, this template can be used to automatically download custom builds of Godot.
 
